@@ -20,7 +20,7 @@ class Recipe
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\Length(min: 5)]
+    #[Assert\Length(max: 255)]
     #[BanWord()]
     private ?string $title = null;
 
