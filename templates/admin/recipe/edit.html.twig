@@ -1,0 +1,14 @@
+{% extends 'admin/admin.html.twig' %}
+
+{% block title "Recette : " ~ recipe.title %}
+
+{% block body %}
+  <h1>{{ recipe.title }} </h1>
+  
+  {{ form_start(form) }}
+    {{ form_row(form.title) }}
+    {{ form_rest(form)}}
+  {{ form_end(form) }}
+
+  
+{% endblock %}
